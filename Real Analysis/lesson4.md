@@ -105,7 +105,7 @@ $$
 
 **from (i) & (ii) sequence is convergent**
 
-**Fun fact: This sequence converges to e. You might recognize this from Taylor's approximation. If you take the series of this sequence it will converge to e. You might also recognize 1^$\infty$ in the limit form which converges to e. Nonetheless, we did not have to compute the limit explicitly and we could comment on convergence or divergence of this sequence.**
+**Fun fact: This sequence converges to e. You might recognize this from Taylor's approximation. If you take the series of this sequence it will converge to e. You might also recognize 1^ $\infty$ in the limit form which converges to e. Nonetheless, we did not have to compute the limit explicitly and we could comment on convergence or divergence of this sequence.**
 
 ## Monotone Convergence Theorem
 
