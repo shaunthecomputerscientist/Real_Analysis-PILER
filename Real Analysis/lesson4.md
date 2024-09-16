@@ -64,7 +64,7 @@ $$
 \frac{a_{n+1}}{a_n} = \frac{\left(1 + \frac{1}{n+1}\right)^{n+1}}{\left(1 + \frac{1}{n}\right)^n}
 $$
 
-Multiply the numerator and denominator by 
+### Multiply the numerator and denominator by
 $$
 \left(1 + \frac{1}{n}\right)
 $$
@@ -72,17 +72,17 @@ $$
 \frac{a_{n+1}}{a_n} = \frac{\left(1 + \frac{1}{n+1}\right)^{n+1} \cdot \left(1 + \frac{1}{n}\right)}{\left(1 + \frac{1}{n}\right)^n \cdot \left(1 + \frac{1}{n}\right)}
 $$
 
-Combine the terms with $(n+1)$ powers:
+### Combine the terms with $(n+1)$ powers:
 $$
 \frac{a_{n+1}}{a_n} = \frac{\left(1 + \frac{1}{n+1}\right)^{n+1} \cdot \left(1 + \frac{1}{n}\right)}{\left(1 + \frac{1}{n}\right)^{n+1}}
 $$
 
-Multiply the numerator and denominator by $n \cdot (n+1)$:
+### Multiply the numerator and denominator by $n \cdot (n+1)$:
 $$
 \frac{a_{n+1}}{a_n} = \frac{\left(1 + n \cdot (n+1) \frac{1}{n+1}\right)^{n+1} \cdot \left(1 + \frac{1}{n}\right)}{\left(1 + n \cdot (n+1) \frac{1}{n}\right)^{n+1} }
 $$
 
-Soon we get:
+### Soon we get:
 $$
 \left(1 + \frac{1}{n}\right) \cdot \left(1 - \frac{1}{n^2+2n+1}\right)^{n+1}
 $$
@@ -91,7 +91,7 @@ $$
 \left(1 + \frac{1}{n}\right) \cdot \left(1 - \frac{1}{(n+1)^2}\right)^{n+1}
 $$
 
-We can get a lower bound using Bernoulli inequality:
+### We can get a lower bound using Bernoulli inequality:
 $$
 \left(1 + \frac{1}{n}\right) \cdot \left(1 - \frac{1}{(n+1)^2}\right)^{n+1} \geq \left(\frac{n+1}{n}\right) \cdot \left(1 - \frac{1}{(n+1)}\right) = 1
 $$
@@ -99,7 +99,7 @@ So,
 $$
 \frac{a_{n+1}}{a_n} \geq 1 
 $$
-which means ($a_n$) is monotonically increasing.
+### which means ($a_n$) is monotonically increasing.
 
 ### **(ii) We can show from binomial theorem that the sequence is bounded**
 
