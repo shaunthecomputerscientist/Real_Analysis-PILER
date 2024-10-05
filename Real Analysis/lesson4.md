@@ -126,9 +126,10 @@ Note $iff$ is double implication, i.e, if convergent then bounded and if bounded
 - Proof :
   - *Trivial case:* Let ($a_n$) be unbounded and increasing. We need to show then it diverges. For that we can take and arbitrary M > 0 and that terms in the sequence get bigger than M eventually. Since M is chosen arbitrarily we will be able to say it holds for all M.
   To show this we can just use the definition of unbounded sequence.
-  $$\exists a_N > M$$ 
-  such that $$\forall  
-  n > N, a_n >= a_N > M $$
+  
+  $$\exists a_N > M $$ 
+  such that 
+  $$\forall  n > N, a_n >= a_N > M $$
   That is the meaning of being unbounded.
   Hence it diverges.
 
@@ -246,8 +247,3 @@ Where $\epsilon$ neighbourhood = (a+$\epsilon$, a-$\epsilon$). We can phrase thi
 
 
 We will soon study notions of closeness, boundaries, etc. Real analysis is starting point to see things little abstractly. So try to see things from very abstract view point. Visualize whenever needed until you grasp the concept. To connect the dots further one must see these things very abstractly.
-
-
-
-
-**Next Lesson Coming Soon**

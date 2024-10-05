@@ -24,7 +24,7 @@ Here we will not construct $\mathbb{Q}$ from scratch. But we will use $\mathbb{Q
 
 If you are little famaliar with abstract algebra where we generalize numbers by studying fundamental algebraic structures.
 We have following types of algebraic structures :
-- sets
+- [sets](/Real%20Analysis/extras/real_analysis/sets.md)
 - groups
 - fields
 - Module
@@ -108,7 +108,7 @@ x_4 = \frac{14142}{10000}, \quad x_4^2 = \frac{49999011}{100000000} \\[10pt]
 x_5 = \frac{141421}{100000}, \quad x_5^2 = \frac{19999899241}{10000000000}
 $$
 
-with each term in the sequence the square gets closer to 2.
+with each term in the sequence the square gets closer to sqrt(2).
 We were finding such a x indeed. But we are only able to approximate such x.
 This suggests the limit does not exist of such a sequence and there must be holes in rationals.
 Hence this space is incomplete.
@@ -143,7 +143,7 @@ This leads us to the completness axiom next.
 ### Few important properties of abs map :
   - |x * y| = |x| * |y|
   - | x+y | $\leq$ |x| + |y| (triangle inequality)
-    - proof : We know, x,-x <= |x| ^ y,-y<=|y|  
+    - proof : We know, x,-x <= |x| ^ y,-y<=|y|  (^ is and).
     It means that x+y <=|x|+|y| ^ -(x+y)<=|x|+|y| ---(1)
     Note |x+y|= x+y when x+y>=0 else -(x+y) but from --(1) we know both of these are <= |x|+|y|
     Therefore, |x+y|<=|x|+|y|
@@ -245,3 +245,41 @@ The full picture is that infimums exist as well if subset of Reals is bounded be
 
 
 -------------------------------------------------------
+
+
+## Nested Interval Property ( consequence of completeness axiom) aka Cantor's Intersection Theorem.
+
+- statement : For each n $\in$ $\N$, assume we are given a closed interval $I_{n}$ = [$a_{n}$,$b_{n}$] = {x $\in$ $\R$ ; $a_{n}$<=x<=$b_{n}$}. Assume each such interval $I_{n}$ contains the next one $I_{n+1}$. Then we have
+
+$$
+I_n \supseteq I_{n+1} \supseteq I_{n+2} \supseteq I_{n+3}...
+$$
+where n belongs to Natural numbers. So it is for n=1,2,3,4...
+This property claims that intersection of all these intervals is non empty.
+
+![nested interval](/Real%20Analysis/media/nextedinterval.png)
+
+Example : L = (0,1/n).
+This set has open interval so nested interval property doesn't apply. Did you think it applies? Pay attention! Read the statement again.😉
+
+Next one is a real example:
+Let $k_n$ = [-1-$\frac{1}{n}$, -1+$\frac{1}{n}$]
+Here it starts from [-2,2] for n=1 and tends to [-1,1].
+
+## Proof : We need to show there exists an x in $ \R$ such that x lies in all of the $ I_n$ . Which will show that intersection of all these intervals is not empty and there exists atleast one element x.
+
+  - structure : 
+    - We will take set of all $ a_n$. Let's call this set A. Then all these $a_n$'s will be lower than any arbitrary $b_n$. Clearly $b_n$ is an upper bound of set A.
+
+![nested interval 2](/Real%20Analysis/media/nextedinterval.png)
+  -  - Then since A has a upper bound, by completeness of reals, it has a supremum. Let this supremum be x.
+
+     - Then if we take any arbitrary interval $I_n$ = [$a_{n}$,$b_{n}$] we can say x belongs in that interval. Why?
+
+     - x is supremum of set A. Which means it is the least upper bound. So all other upper bounds are greater than x. Which means x is less than or equal to all $b_n$. In particular $a_{n}$<=x<=$b_{n}$ for all Intervals.
+
+  $ \blacksquare$
+
+
+### This property highlights that there are no holes in reals. It uses the completeness axiom to do so.
+
