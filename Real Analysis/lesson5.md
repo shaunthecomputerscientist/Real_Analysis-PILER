@@ -46,7 +46,7 @@ Note : This also holds for complex sequences (might be proved in complex analysi
 
 # Limit Superior & Limit Inferior:
 
-Let's recap what ir means to be unbounded.
+Let's recap what it means to be unbounded.
 
 A sequence is divergent to $\infty$ if,
 
@@ -154,4 +154,4 @@ Then ($a_n$*$b_n$) = (0,0,0,0,0,0,0,...)
 
 $$0 = lim_{n \to \infty}sup(a_n * b_n) \leq lim_{n \to \infty} sup a_n *lim_{n \to \infty}b_n=1*2=2$$
 
-These properties are useful when dealing for calculations for proofs.
+These properties are useful when dealing with calculations proofs.

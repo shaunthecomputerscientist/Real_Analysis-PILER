@@ -229,7 +229,7 @@ The full picture is that infimums exist as well if subset of Reals is bounded be
 ### **Claim : Let A $\subseteq$ $\mathbb R$ and A is bounded below by m and non empty. Then infimum exists for set A.**
 #### - Proof : **Define -A = { -a | a $\in$ A} we know m<=a $\forall$ a $\in$ A ; This implies -m>=-a $\forall$ -a $\in$ -A; So we found an upper bound for -A. So there exists a supremum of -A.**
 
-#### **Now we need to show - sup(-A)=inf -A to conclude the proof.**
+#### **Now we need to show - sup(-A)=inf A to conclude the proof.**
 
 #### **sup(-A)>=-a $\forall$ -a $\in$ A**
 #### ** - sup(-A)<=a $\forall$ a $\in$ A**

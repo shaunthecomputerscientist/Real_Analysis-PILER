@@ -107,6 +107,15 @@ $$
 
 **Fun fact: This sequence converges to e. You might recognize this from Taylor's approximation. If you take the series of this sequence it will converge to e. You might also recognize 1^ $\infty$ in the limit form which converges to e. Nonetheless, we did not have to compute the limit explicitly and we could comment on convergence or divergence of this sequence.**
 
+
+### Notes on boundedness and Divergence:
+
+- Divergence : A sequence is divergent to + $\infty$ if for all M>0 $\exists$ N $\in$ $\N$ such that $\forall$ n >= N, $a_{n}$ >= M.
+
+- Unbounded : A sequence is unbounded if it's not bounded.
+
+**An unbounded sequence diverges but a divergent sequence is not necessarily unbounded. This refers to oscillatory sequences. Example (-1)^n. This sequence is divergent/oscillatory but also not unbounded. It is bounded.**
+
 ## Monotone Convergence Theorem
 
 - statement : Let ($a_n$) be a monotonic sequence then ($a_n$) is convergent $iff$ bounded.
@@ -223,8 +232,14 @@ $\blacksquare$
 # Accumulation Value :
 
 - **It is generalization of a limit of a sequence.**
-- **Formally a $\in$ $\R$
-is called and accumulation value of sequence ($a_n$) if there is a subsequence $(a_{n_k})$ with limit 'a'. If this arbitrary sequence is a convergent sequence then we know that limit of sequence and subsequence both converge to 'a'. Hence accumulation value becomes limit of the sequence.**
+- Formally a $\in$ $\R$
+is called and accumulation value of sequence ($a_n$) if there is a subsequence $(a_{n_k})$ with limit 'a'. If this arbitrary sequence is a convergent sequence then we know that limit of sequence and subsequence both converge to 'a'. Hence accumulation value becomes limit of the sequence.
+
+- Another way to frame this is without using the word subsequence and using the idea of limit point of a set A. A point x is called limit point of set A if there is a sequence $(a_n)_{n \in \N}$ such that $a_n$ $\in$ A\ {x} and limit of the sequence tends to x. THis also suggests that x may not be in the set A. This definition is for sets.
+
+- Example : (0,1) is an open set. Consider the harmonic sequence 1,1/2,1/4,... We know this converges to 0. But 0 is not in the set. Also The sequence can not start from 1 since 1 is not included. Hence we are taking basically a subsequence. A set of points in A which converges to something. But that something itself is not included in the set of points/sequence.
+
+
 - **Accumulation value is not unique. A sequence can have multiple accumulation values. So with all this is mind we can say accumulation value is generalization of limit.**
 - **Accumulation value is also known as cluster point or limit point or partial limit of the sequence.**
 
@@ -241,6 +256,16 @@ Where $\epsilon$ neighbourhood = (a+$\epsilon$, a-$\epsilon$). We can phrase thi
 - If E is the set of values of sequence members which is subset of reals, then p is accumulation point in E if (E-{p}) $\cap$ nbd(P) $\not=$ $\varphi$ where $\varphi$ is empty set. This tells us no matter how small a neighbourhood around point P we take, there must always be some elment such that the neighbourhood and set E ( without {p}) must have something in common. Note : nbd is $\epsilon$ neighbourhood. This must be true for all $\epsilon$>0 no matter how small or big.
 
 
+
+We can Show that the sequential definition of limit points and this neighbourhood definition are equivalent.
+
+### Proof :
+  - (1) x is limit point of set a if there is a sequence of points in in A\ {x} such that the sequence converges to x => Every epsilon neighbourhood of x intersects A at some point other than x.
+    - Let $\beta_{\epsilon}$(x) be arbitrary epsilon neighbourhood of x. Then we have sequence which converges to x. Which means lim $(a)_n$ ---> x as n gets larger. This means members of the sequence gets arbitrarily closer to x i.e, |$a_n$ - x| < $\epsilon$ $\forall$ n > N. Thus $\forall$ n>N $a_n$ lies in the arbitrary epsilon neighbourhood of x. This can be done for any $\epsilon$>0. Hence epsilon neighbourhood of x is not empty for all $\epsilon$>0.
+
+  - (2) Let Every epsilon neighbourhood of x intersects A at some point other than x => There is a sequence in A\ {x} which converges to x.
+    - since there is an intersection of $\beta_{\epsilon}$(x) and A is non empty and has points other than x we can define :
+    For each n $\in$ $\N$ take $\beta_{\frac{1}{n}}$(x) $\cap$ A such that $a_n$ not equals x. ***This set is valid since $\frac{1}{n}$ > 0 and this neighbourhood will atleast contain one or more points other than x.*** Then for $\epsilon$ > 0 and N > $\frac{1}{\epsilon}$, we have $\forall$ n > N, |$a_n$-x|< $\frac{1}{n}$ but since N>n => $\frac{1}{n}$ < $\frac{1}{N}$ but we assumed N > 1/$\epsilon$ => $\frac{1}{N}$ < $\epsilon$ => |$a_n$-x| < $\epsilon$ ***Hence the sequence converges to x.***
 
 
 ### Suggestions : Things might be simple till now. We are using our inherent notion of distance, space, time, and visualizations to understand these topics. Diagrams sometimes make things simpler. You could see a sequence with 4 different accumulation points. You visualized it. Intuitively you could map out distance between points, how points got closer and closer around those areas. In mathematics our goal is to generalize as much as possible. These inherent notions of distances, intuition, nearness/closeness, big/small (visually) are not something which is very general. Our goal is to think independently of these constraints. Think more abstractly. Which will help us get to a very general structure in mathematics from which we deduce everything progressively with logic/ first principles, whatever you want to call it.
